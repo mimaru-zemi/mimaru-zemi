@@ -12,6 +12,7 @@ body {
     background-color: #fcfcfc;
 }
 
+
 /* 中央寄せと幅の制限 */
 .container {
     width: 90%;
@@ -207,9 +208,6 @@ h3 > span {
     font-size: 1.4em;
 }
 /* 入会までの流れ */
-.flow-container {
-    margin-bottom: 60px;
-}
 
 .flow-steps {
     display: flex;
@@ -282,6 +280,9 @@ footer p {
 
 /* スマホ対応 */
 @media (max-width: 768px) {
+
+    section {padding: 10px 0;}
+
     h2 { font-size: 1.5em; }
     .problem-container, .instructor-details, .flow-steps {
         flex-direction: column;
