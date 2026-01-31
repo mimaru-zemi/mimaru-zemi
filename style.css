@@ -29,8 +29,12 @@ section {
 h2 {
     font-size: 2em;
     color: #004d40;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     line-height: 1.4;
+}
+
+h3 {
+    font-size: 1.2rem;
 }
 
 h3 > span {
@@ -152,7 +156,8 @@ h3 > span {
     font-weight: bold;
 }
 
-.core-message { font-size: 1.2em; margin-bottom: 20px; }
+.core-message { font-size: 1.2em;}
+
 .core-message strong { color: #ffeb3b; }
 
 /* 価格表 */
@@ -283,7 +288,12 @@ footer p {
 
     section {padding: 10px 0;}
 
-    h2 { font-size: 1.5em; }
+    h2 { font-size: 1.1em; }
+
+    h3 {
+        font-size: 1rem;
+    }
+
     .problem-container, .instructor-details, .flow-steps {
         flex-direction: column;
     }
@@ -298,5 +308,10 @@ footer p {
 
     .price-table th, .price-table td {
         padding: 10px;
+    }
+
+    .logic-flow {
+        margin: 20px 0;
+        font-size: 1.2em;
     }
 }
