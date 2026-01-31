@@ -295,4 +295,8 @@ footer p {
     .instructor-text { text-align: center; }
     .step { margin-bottom: 20px; }
     #hero h1 { font-size: 2em; }
+
+    .price-table th, .price-table td {
+        padding: 10px;
+    }
 }
