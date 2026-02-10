@@ -315,3 +315,38 @@ footer p {
         font-size: 1.2em;
     }
 }
+
+/* --- LP強化のための追加・修正 --- */
+
+/* 1. スマホでの見出しを読みやすく大きく */
+@media (max-width: 768px) {
+    h2 { 
+        font-size: 1.5em !important; /* 1.1から1.5へ。インパクトを重視 */
+        padding: 0 10px;
+    }
+    
+    .cta-button {
+        margin-top: 30px !important; /* 隙間を詰め、ボタンを見つけやすく */
+        width: 100%; /* スマホではボタンを横いっぱいに（押しやすく） */
+        font-size: 1.2em;
+    }
+}
+
+/* 2. 箇条書きに「チェックマーク」を付けて読みやすく */
+.student-side ul, .parent-side ul, .solution-container ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.student-side li::before, .parent-side li::before, .solution-container li::before {
+    content: "●"; /* または「✓」など。視覚的なポイントを作る */
+    margin-right: 10px;
+    color: inherit;
+    font-size: 0.8em;
+    vertical-align: middle;
+}
+
+/* 3. 画像の周りに少し余白を作る（スマホで文字とくっつかないよう） */
+.instructor-photo {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1); /* 写真を浮かせてプロっぽく */
+}
